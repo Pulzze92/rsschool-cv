@@ -1,3 +1,4 @@
+/*CSS Reset*/
 *{
 	padding: 0;
 	margin: 0;
@@ -37,19 +38,27 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
-
+/*Styles for entire page*/
 body {
 	font-family:'PT Sans', Arial, Helvetica, sans-serif;
-	font-size: 16px;
+	font-size: 23px;
+	color: grey
 }
 
+h2, h3, .summary__head {
+	color: black;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/*Header*/
 .main__head {
 	height: 100px;
-	background: linear-gradient(to right, #F6EFD2, #CEAD78);
+	/*background: linear-gradient(to right, #F6EFD2, #CEAD78);*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 2px solid black;
 }
 
 header img {
@@ -57,14 +66,54 @@ header img {
 	top: 30px;
 }
 
-main {
-	margin: 0 auto;
+.my-photo {
+	float: right;
+	position: absolute;
+	right: 150px;
+	top: 220px;
+	box-shadow: black;
+	max-width: 100%;
 }
 
+/*Main block*/
+main {
+	padding-top: 30px;
+	margin: 0 auto;
+	background: linear-gradient(90deg, rgba(255,255,251,1) 41%, rgba(235,228,198,1) 81%);
+	max-width: 80%;
+	box-shadow: 2px 2px 50px black;
+}
+
+.contacts, .email {
+	padding: 20px 20px 20px 20px;
+	display: block;
+}
 .main__block {
-	margin: 20px auto;
-	border: 5px solid goldenrod;
-	border-radius: 2px;
+	margin: 0px auto;
+}
+
+.h5 {
+	margin-bottom: 2px;
+}
+.summary {
+margin-top: 160px;
+}
+
+.past {
+	text-indent: 1.5em;
+	padding: 10px 10px 10px 20px;
+}
+
+.present {
+	text-indent: 1.5em;
+	padding: 10px 10px 10px 20px;
+}
+
+ul li {
+	list-style-type: square;
+	padding-left: 30px;
+	margin-left: 40px;
+	padding-bottom: 5px;
 }
 
 .name h2{
@@ -86,4 +135,28 @@ main {
 	margin: 20px auto;
 	font-size: 18px;
 }
+
+code {
+	font-size: 15px;
+}
+
+.english h3 {
+	margin: 0;
+	padding-bottom: 20px;
+}
+/*Footer*/
+footer {
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+}
+
+h4 {
+	font-size: 23px;
+	padding: 20px 0 35px 68px;
+}
+
+
 
