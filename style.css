@@ -45,33 +45,33 @@ body {
 	font-size: 18px;
 	color: rgb(87, 87, 87);
 	background-color: rgb(240, 233, 221);
-	text-shadow: 1px 1px 7px rgb(153, 152, 152);
+	text-shadow: 0.15em 0.15em 20px rgb(135, 135, 135);
 }
 
 section {
-	border: 1px solid rgb(225, 218, 218);
-	padding: 20px 40px 40px 40px;
-	margin: 100px;
+	border: 0.1em solid rgb(225, 218, 218);
+	padding: 1em 2em 2em 2em;
+	margin: 3em;
 	background-color: rgba(175, 175, 175, 0.446);
 	border-radius: 10px;
-	box-shadow: 2px 2px 22px rgb(169, 167, 167);
+	box-shadow: 1em 1em 2em rgb(169, 167, 167);
 }
 
 code {
 	display: block;
-	border: 1px solid black;
-	font-size: 12px;
-	margin: 30px;
+	border: 0.1em solid black;
+	font-size: 2em;
+	margin: 2em;
 	color: black;
 	background-color: rgb(240, 240, 240);
-	padding: 50px 20px 20px 20px; 
+	padding: 3em 2em 2em 2em; 
 }
 
 h2, h3, .summary__head {
 	color: black;
 	font-weight: 700;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 2em;
 }
 
 /*Header*/
@@ -86,51 +86,28 @@ h2, h3, .summary__head {
 }
 
 .name {
-	letter-spacing: 3px;
-	margin-bottom: 40px;
+	letter-spacing: 0.3em;
+	margin-bottom: 4em;
 }
 
 .my-photo {
 	align-self: center;
-	margin-bottom: 50px;
+	margin-bottom: 5em;
 }
 
 .my-photo img {
 	border-radius: 50%;
-	box-shadow: 5px 5px 30px black;
-	border: 2px solid rgb(208, 208, 208);
+	box-shadow: 0.5em 0.5em 3em black;
+	border: 0.01em solid rgb(208, 208, 208);
 }
 
 /*Main block*/
 
 .title_contacts {
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 3em;
 	font-weight: 700;
-	font-size: 20px;
-}
-
-.phone {
-	list-style: none;
-	background: url(img/phone.svg) no-repeat;
-}
-
-.email {
-	list-style: none;
-	background: url(img/mail.svg) no-repeat;
-	position: absolute;
-	left: 367px;
-}
-
-.summary__head {
-	background: url(img/flipchart.svg) no-repeat;
-	position: absolute;
-	left: 420px;
-	padding-left: 30px;
-}
-
-.email h5 {
-	position: relative;
+	font-size: 1.5em;
 }
 
 main {
@@ -161,13 +138,6 @@ main {
 	margin-top: 15px;
 }
 
-.title__hard_skills {
-	background: url(img/list.svg) no-repeat;
-	position: absolute;
-	left: 420px;
-	padding-left: 30px;
-}
-
 .list_hard {
 	padding-top: 40px;
 }
@@ -175,13 +145,6 @@ main {
 .present {
 	text-indent: 1.5em;
 	padding: 10px 10px 10px 20px;
-}
-
-.soft__skills h3 {
-	background: url(img/book.svg) no-repeat;
-	position: absolute;
-	left: 420px;
-	padding-left: 30px;
 }
 
 .soft__skills ul {
@@ -210,36 +173,15 @@ ul li {
 	justify-content: center;
 }
 
-.contacts, .email {
-	margin: 20px auto;
-	font-size: 18px;
-}
+
 
 code {
 	font-size: 15px;
 }
 
-.code_example h3 {
-	background: url(img/lightbulb.svg) no-repeat;
-	position: absolute;
-	left: 420px;
-	padding-left: 30px;
-	margin-top: 10px;
-}
-
-.soft__skills h3 {
-	background: url(img/book.svg) no-repeat;
-	position: absolute;
-	left: 420px;
-	padding-left: 30px;
-}
-
-.work__experience h3 {
-	background: url(img/group.svg) no-repeat;
-	position: absolute;
-	top: 1940px;
-	left: 340px;
-	padding-left: 30px;
+.code_example h3::before {
+	content: url('img/lightbulb.svg');
+	text-align: center;
 }
 
 .work__experience ul {
@@ -257,12 +199,11 @@ footer {
 .english h4 {
 	display: flex;
 	justify-content: center;
+	margin: 20px;
+	font-weight: 700;
+	padding-bottom: 2em;
 }
 
-h4 {
-	font-size: 23px;
-	padding: 20px 0 35px 0px;
-}
 
 .github h5 {
 	display: flex;
