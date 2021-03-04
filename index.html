@@ -14,27 +14,31 @@
 
 <body>
 	<header class="main__head">
-		<div class="logo">
-			<img src="img/Logo.svg" alt="rss_logo">
-		</div>
 	</header>
 	<main>
 		<div class="main__block">
-			<div class="about">
-				<div class="name">
-					<h2>Alexander Bakshtaev</h2>
-					<h3>Frontend-developer</h3>
+			<section>
+				<div class="about">
+					<div class="name">
+						<h2>Alexander Bakshtaev</h2>
+						<h3>Frontend-developer</h3>
+					</div>
+					<div class="my-photo">
+						<img src="img/photo.jpg" alt="my-photo" width="200px">
+					</div>
+					<div class="contacts">
+						<ul>
+							<h5 class="title_contacts">Contacts:</h5>
+							<li class="phone">
+								<h5>Mobile number: <a href="tel:+7(999)831-03-92">+7(999)831-03-92</a></h5>
+							</li>
+							<li class="email">
+								<h5>E-mail:<a href="mailto:pulzze92@yahoo.com">pulzze92@yahoo.com</a></h5>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<span class="contacts">
-					<h5>Mobile number: <a href="tel:+7(999)831-03-92">+7(999)831-03-92</a></h5>
-				</span>
-				<span class="email">
-					<h5>E-mail:<a href="mailto:pulzze92@yahoo.com">pulzze92@yahoo.com</a></h5>
-				</span>
-				<div class="my-photo">
-					<img src="img/photo.jpg" alt="my-photo" width="200px">
-				</div>
-			</div>
+			</section>
 			<article class="summary">
 				<header class="summary__head">About me</header>
 				<p class="past">My main target is to become a really professional frontend-developer. I was a financial
@@ -47,8 +51,8 @@
 					free time I try to learn something new.</p>
 			</article>
 			<div class="hard__skills">
-				<h3>Hard skills</h3>
-				<ul>
+				<h3 class="title__hard_skills">Hard skills</h3>
+				<ul class="list_hard">
 					<li>Programming - JavaScript;
 						<ul>
 							<li>ES 6</li>
@@ -64,6 +68,27 @@
 					<li>Figma</li>
 					<li>Avocode</li>
 				</ul>
+			</div>
+			<div class="code_example">
+				<h3>Code example:</h3>
+				<code><pre>
+let o = document.querySelector('.o');
+
+for (let i = 6; i > 0; i-- ) {
+	o.innerHTML += '&lt;br&gt;';
+	for (let j = 1; j  i; j++) {
+		o.innerHTML += '*';
+	}
+}
+
+This code demonstrates how to paint a triangle with help of nested loop like this:
+*****
+****
+***
+**
+*
+</pre>
+				</code>
 			</div>
 			<div class="soft__skills">
 				<h3>Soft skills</h3>
@@ -92,8 +117,15 @@
 		</div>
 	</main>
 	<footer>
-		<div class="github"><a href="https://github.com/Pulzze92">My GitHub</a></div>
+		<div class="logo">
+			<a href="https://rs.school/"><img src="img/rs_school.svg" alt="rss_logo" width="200px"></a>
+		</div>
+		<div class="github"><a href="https://github.com/Pulzze92"><img src="img/iconmonstr-github-1.svg" width="100px"
+					alt="github_logo">
+				<h5>My profile</h5>
+			</a></div>
 	</footer>
+
 </body>
 
 </html>

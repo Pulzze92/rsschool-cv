@@ -39,10 +39,32 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 /*Styles for entire page*/
+
 body {
 	font-family:'PT Sans', Arial, Helvetica, sans-serif;
-	font-size: 23px;
-	color: grey
+	font-size: 18px;
+	color: rgb(87, 87, 87);
+	background-color: rgb(240, 233, 221);
+	text-shadow: 1px 1px 7px rgb(153, 152, 152);
+}
+
+section {
+	border: 1px solid rgb(225, 218, 218);
+	padding: 20px 40px 40px 40px;
+	margin: 100px;
+	background-color: rgba(175, 175, 175, 0.446);
+	border-radius: 10px;
+	box-shadow: 2px 2px 22px rgb(169, 167, 167);
+}
+
+code {
+	display: block;
+	border: 1px solid black;
+	font-size: 12px;
+	margin: 30px;
+	color: black;
+	background-color: rgb(240, 240, 240);
+	padding: 50px 20px 20px 20px; 
 }
 
 h2, h3, .summary__head {
@@ -54,40 +76,73 @@ h2, h3, .summary__head {
 
 /*Header*/
 .main__head {
-	height: 100px;
-	/*background: linear-gradient(to right, #F6EFD2, #CEAD78);*/
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	height: 50px;
 }
 
-header img {
-	height: 70px;
-	top: 30px;
+
+.about {
+	display: flex;
+	flex-direction: column;
+}
+
+.name {
+	letter-spacing: 3px;
+	margin-bottom: 40px;
 }
 
 .my-photo {
-	float: right;
-	position: absolute;
-	right: 150px;
-	top: 220px;
-	box-shadow: black;
-	max-width: 100%;
+	align-self: center;
+	margin-bottom: 50px;
+}
+
+.my-photo img {
+	border-radius: 50%;
+	box-shadow: 5px 5px 30px black;
+	border: 2px solid rgb(208, 208, 208);
 }
 
 /*Main block*/
+
+.title_contacts {
+	text-align: center;
+	margin-bottom: 30px;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.phone {
+	list-style: none;
+	background: url(img/phone.svg) no-repeat;
+}
+
+.email {
+	list-style: none;
+	background: url(img/mail.svg) no-repeat;
+	position: absolute;
+	left: 367px;
+}
+
+.summary__head {
+	background: url(img/flipchart.svg) no-repeat;
+	position: absolute;
+	left: 420px;
+	padding-left: 30px;
+}
+
+.email h5 {
+	position: relative;
+}
+
 main {
-	padding-top: 30px;
+	padding-top: 10px;
 	margin: 0 auto;
 	background: linear-gradient(90deg, rgba(255,255,251,1) 41%, rgba(235,228,198,1) 81%);
 	max-width: 80%;
 	box-shadow: 2px 2px 50px black;
+	line-height: 20px;
+	border-radius: 15px;
 }
 
-.contacts, .email {
-	padding: 20px 20px 20px 20px;
-	display: block;
-}
 .main__block {
 	margin: 0px auto;
 }
@@ -96,12 +151,25 @@ main {
 	margin-bottom: 2px;
 }
 .summary {
-margin-top: 160px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .past {
 	text-indent: 1.5em;
-	padding: 10px 10px 10px 20px;
+	padding: 50px 10px 10px 20px;
+	margin-top: 15px;
+}
+
+.title__hard_skills {
+	background: url(img/list.svg) no-repeat;
+	position: absolute;
+	left: 420px;
+	padding-left: 30px;
+}
+
+.list_hard {
+	padding-top: 40px;
 }
 
 .present {
@@ -109,10 +177,21 @@ margin-top: 160px;
 	padding: 10px 10px 10px 20px;
 }
 
+.soft__skills h3 {
+	background: url(img/book.svg) no-repeat;
+	position: absolute;
+	left: 420px;
+	padding-left: 30px;
+}
+
+.soft__skills ul {
+	padding-top: 50px;
+}
+
 ul li {
 	list-style-type: square;
 	padding-left: 30px;
-	margin-left: 40px;
+	margin-left: 60px;
 	padding-bottom: 5px;
 }
 
@@ -140,22 +219,54 @@ code {
 	font-size: 15px;
 }
 
-.english h3 {
-	margin: 0;
-	padding-bottom: 20px;
+.code_example h3 {
+	background: url(img/lightbulb.svg) no-repeat;
+	position: absolute;
+	left: 420px;
+	padding-left: 30px;
+	margin-top: 10px;
 }
+
+.soft__skills h3 {
+	background: url(img/book.svg) no-repeat;
+	position: absolute;
+	left: 420px;
+	padding-left: 30px;
+}
+
+.work__experience h3 {
+	background: url(img/group.svg) no-repeat;
+	position: absolute;
+	top: 1940px;
+	left: 340px;
+	padding-left: 30px;
+}
+
+.work__experience ul {
+	margin-top: 70px;
+}
+
 /*Footer*/
 footer {
-	height: 100px;
+	height: 300px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.english h4 {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	background-color: black;
 }
 
 h4 {
 	font-size: 23px;
-	padding: 20px 0 35px 68px;
+	padding: 20px 0 35px 0px;
+}
+
+.github h5 {
+	display: flex;
+	justify-content: center;
 }
 
 
