@@ -42,7 +42,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 body {
 	font-family:'PT Sans', Arial, Helvetica, sans-serif;
-	font-size: 18px;
+	font-size: 23px;
 	color: rgb(87, 87, 87);
 	background-color: rgb(240, 233, 221);
 	text-shadow: 0.15em 0.15em 20px rgb(135, 135, 135);
@@ -114,7 +114,7 @@ main {
 	padding-top: 10px;
 	margin: 0 auto;
 	background: linear-gradient(90deg, rgba(255,255,251,1) 41%, rgba(235,228,198,1) 81%);
-	max-width: 80%;
+	max-width: 40%;
 	box-shadow: 2px 2px 50px black;
 	line-height: 20px;
 	border-radius: 15px;
@@ -173,7 +173,13 @@ ul li {
 	justify-content: center;
 }
 
-
+.contacts ul span {
+	display: block;
+	text-align: center;
+	font-weight: 700;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
 
 code {
 	font-size: 15px;
