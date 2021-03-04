@@ -173,10 +173,10 @@ ul li {
 	justify-content: center;
 }
 
-.contacts ul {
+.contacts h5 {
 	text-align: center;
 	font-weight: 700;
-	font-size: 22px;
+	padding-bottom: 20px;
 }
 
 .contacts ul li {
