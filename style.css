@@ -173,12 +173,14 @@ ul li {
 	justify-content: center;
 }
 
-.contacts ul span {
-	display: block;
+.contacts ul {
 	text-align: center;
 	font-weight: 700;
 	font-size: 22px;
-	margin-bottom: 20px;
+}
+
+.contacts ul li {
+	margin-top: 20px;
 }
 
 code {
